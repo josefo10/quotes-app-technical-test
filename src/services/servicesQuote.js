@@ -11,7 +11,6 @@ exports.imageapi = async (quotesData) => {
 exports.quoteapi = async () => {
     const response = await fetch('https://zenquotes.io/api/random');
     const quotesData = await response.json();
-    console.log('probando citas', response);
     return ({ 'quoteData': quotesData[0].q, 'status': response.status });
 }
 

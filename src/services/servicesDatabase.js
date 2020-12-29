@@ -8,7 +8,6 @@ exports.saveDataQuote = async (quoteData, imageUrl) => {
     } catch (error) {
         return (error);
     }
-
 }
 
 exports.quoteDelete = async (id) => {

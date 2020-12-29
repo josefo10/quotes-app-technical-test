@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/josefo10/quotes-app-technical-test#readme",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "mongoose": "^5.11.9",
     "mongoose-sequence": "^5.3.0",
