@@ -3,7 +3,7 @@ const router = Router();
 const {imageapi, quoteapi} = require('../services/servicesQuote');
 const {saveDataQuote, quoteDelete, quoteFind} = require('../services/servicesDatabase');
 
-const quote = require('../models/quotes');
+//const quote = require('../models/quotes');
 
 
 router.get('/api/v1/generate-Changing-life-quote', async (req, res) =>{
@@ -41,7 +41,6 @@ router.delete('/api/v1/delete-Changing-life-quote/:id', async(req, res) => {
     try{
         const id = req.params.id;
         const deleteQuote = await quoteDelete(id);
-        //const data = await quote.deleteOne({_id:id});
         if(deleteQuote.deletedCount > 0){
             res.status(200).send('The quote was successfully deleted');
         }else{
