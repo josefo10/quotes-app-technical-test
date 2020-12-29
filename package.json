@@ -1,0 +1,19 @@
+{
+  "name": "quotes-app-technical-test",
+  "version": "1.0.0",
+  "description": "Technical Test Experimentality - Backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josefo10/quotes-app-technical-test.git"
+  },
+  "author": "Jose Luis Aguirre Ramirez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josefo10/quotes-app-technical-test/issues"
+  },
+  "homepage": "https://github.com/josefo10/quotes-app-technical-test#readme"
+}
