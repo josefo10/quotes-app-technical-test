@@ -1,16 +1,17 @@
 const express = require('express');
 const morgan = require('morgan');
-require('dotenv').config();
+const settings = require('./settings');
 
 //Initalizations
 const app = express();
-require('./database');
+const {connectDb} = require('./database');
+
 
 // setings 
-app.set('port', process.env.PORT);
+app.set('port', settings.PORT);
 app.set('json spaces', 2);
 
-//midelwares
+//middlewares
 app.use(morgan('dev'));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
@@ -22,3 +23,5 @@ app.use(require('./routes/routes'));
 app.listen(app.get('port'), () => {
     console.log('Server on port', app.get('port'));
 });
+
+ connectDb()
